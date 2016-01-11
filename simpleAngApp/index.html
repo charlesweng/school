@@ -1,0 +1,81 @@
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8" />
+	<title>Angular Test</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.0-beta.0/angular-messages.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-resource.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<nav>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Simple Angular JS Application</h1>
+		</div>
+	</div>
+</nav>
+<section class="container">
+<div class="row">
+	<div class="col-md-12" ng-controller="mainController">
+		<form class="form-group">
+			<input class="form-control" ng-model="myInput" placeholder="Enter something, genius"/>
+      <!-- ng&#45;class firstarg(classname) :(syntax) secondarg(booleanstmt) -->
+			<p class="alert" ng-class="{'alert-danger' : myInput.length === 0, 'alert-warning': myInput.length > 0 && myInput.length <= 5, 'alert-success' : myInput.length >5}">{{ "Hello " + myInput }}</p>
+			<button class="btn btn-warning" ng-click="submit($event)">Submit</button>
+		</form>
+	</div>
+	<hr />
+	<div class="col-md-12" ng-controller="usersController">
+		<div ng-repeat="user in users">
+			<h3> <span class="glyphicon {{ user.glyph }}" aria-hidden="true"></span> Stats for: {{ user.name | capitalize }} </h3>
+			<ul>
+				<li>Name: {{ user.name | capitalize }}</li>
+				<li>Age: {{ user.age }}</li>
+				<li>Profession: {{ user.profession }}</li>
+				<li>Hobbies: {{ user.hobbies }}</li>
+				<li> <button class="btn btn-danger" ng-click="delUser(user.name)">Delete User</button></li>
+			</ul>
+		</div>
+		<div class="col-md-12">
+		<form class="form-group">
+			<h3>Add A User</h3>
+			<hr />
+			<label>Name</label>
+			<input type="text" class="form-control" placeholder="Enter a name" ng-model='name'/>
+			<br />
+			<label>Age</label>
+			<input type="tel" class="form-control" placeholder="Enter your age" ng-model='age'/>
+			<br />
+			<label>Profession</label>
+			<input type="text" class="form-control" placeholder="Enter a name" ng-model='profession'/>
+			<br />
+			<label>Hobbies</label>
+			<input type="text" class="form-control" placeholder="Enter a name" ng-model='hobbies'/>
+			<br />
+			<label>Glyph</label>
+			<select ng-model="glyph" class="form-control">
+				<option selected>glyphicon-heart</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span> glyphicon-piggy-bank</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span>glyphicon-music</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span>glyphicon-glass</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span>glyphicon-plus</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span>glyphicon-star</option>
+				<option><span class="glyphicon glyphicon-piggy-bank"></span>glyphicon-road</option>
+			</select>
+			
+			<br />
+			<button class="btn btn-success" ng-click="addUser($event)">Go</button>
+		</form>
+		</div>
+	</div>
+
+</div>
+</section>
+</body>
+</html>
