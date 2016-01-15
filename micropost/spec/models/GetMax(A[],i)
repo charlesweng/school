@@ -1,0 +1,14 @@
+GetMax(A[],i)
+	if (A.last < A.first)
+		if (A[i] < A[0])
+			if (A[i-1] > A[i])
+				return A[i]
+			else
+				return GetMax(A[],i/2);
+		else
+			if (A[i+1] < A[i])
+				return A[i];
+			else
+				return GetMax(A[], (i+A.size())/2)
+	else
+		return A.first
