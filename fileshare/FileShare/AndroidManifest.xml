@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsb.cs.cs185.fileshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-feature
+    android:name="android.hardware.nfc"
+    android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+	
+	<uses-permission android:name="android.permission.NFC" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_fileshare"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Fileshare" >
+        
+       <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="edu.ucsb.cs.cs185.fileshare.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="edu.ucsb.cs.cs185.fileshare.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.ucsb.cs.cs185.fileshare.NFCSendFragment"
+            android:label="@string/title_activity_sending" >
+        </activity>
+    </application>
+
+</manifest>

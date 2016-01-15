@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FileShare</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="send">Send</string>
+    <string name="selectdevice">Please Select Devices</string>
+    <string name="dennisphone">Dennis\'s Phone</string>
+    <string name="charlesphone">Charles\'s Phone</string>
+    <string name="brianphone">Brian\'s Phone</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_sending">Sending</string>
+    <string name="inner_app_name">FileShare</string>
+    <string name="undo">Undo</string>
+    <string name="sending">Sending</string>
+    <string name="receiving">Receiving</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_message">Are you sure?</string>
+    <string name="receive">Receive</string>
+    <string name="search">Search</string>
+    <string name="searchDev">In Development</string>
+
+</resources>

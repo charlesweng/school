@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/brian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/brianphone" />
+
+    <RadioButton
+        android:id="@+id/charles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charlesphone" />
+
+    <RadioButton
+        android:id="@+id/dennis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dennisphone" />
+
+<!-- 	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+	<Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_weight=".5"
+        android:background="@drawable/btn_blue" />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_weight=".5"
+        android:background="@drawable/btn_blue" />
+    
+	</LinearLayout> -->
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/SendFragHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical" 
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/SendFragHelper"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@android:string/cancel" 
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@android:string/ok" 
+            android:layout_alignParentBottom="true" 
+            android:layout_toRightOf="@id/SendFragHelper"
+            android:onClick="sendFiles"
+            />
+    </RelativeLayout>
+	
+</LinearLayout>
