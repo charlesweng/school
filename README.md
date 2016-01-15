@@ -10,6 +10,6 @@ school projects and tutorials
 
 [puzzleme](puzzleme) - java swing game, dennis's idea for a projects course
 
-[scalatutorial](scala) - tutorials for learning scala for a programming languages class
+[scalatutorial](scalatutorial) - tutorials for learning scala for a programming languages class
 
 
