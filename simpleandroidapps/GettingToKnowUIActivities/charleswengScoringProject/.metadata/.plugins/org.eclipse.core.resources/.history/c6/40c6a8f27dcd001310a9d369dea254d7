@@ -1,0 +1,5 @@
+package com.example.charleswengscoring;
+
+public interface ChangeText {
+		public void setDate(String data);
+}

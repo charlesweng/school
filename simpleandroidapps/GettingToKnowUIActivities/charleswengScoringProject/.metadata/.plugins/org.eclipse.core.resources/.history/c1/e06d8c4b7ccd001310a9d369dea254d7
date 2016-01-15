@@ -1,0 +1,66 @@
+package com.example.charleswengscoring;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.util.Log;
+import android.widget.DatePicker;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MyDatePicker extends Fragment implements DialogInterface.OnClickListener, DatePickerDialog.OnDateSetListener{
+
+	ChangeText cd;
+	String formattedDate;
+//	boolean datechanged=false;
+//	DialogInterface.OnClickListener dateClickListener =
+//			new DialogInterface.OnClickListener() {
+//				
+//				@Override
+//				public void onClick(DialogInterface dialog, int which) {
+//					// TODO Auto-generated method stub
+////					cd.setDate(formattedDate);
+//					datechanged=true;
+//					Log.d("clicked button", "good");
+//				}
+//			};
+//	public MyDatePicker(Context context, OnDateSetListener callBack, int year,
+//			int monthOfYear, int dayOfMonth) {
+//		super(context, callBack, year, monthOfYear, dayOfMonth);
+//		super.setButton(BUTTON_POSITIVE, "Done", dateClickListener);
+//	}
+//	
+
+	@Override
+	public void onClick(DialogInterface dialog, int which) {
+		cd.setDate(formattedDate);
+	}
+	
+	@SuppressLint("SimpleDateFormat") @Override
+	public void onDateSet(DatePicker view, int year, int monthOfYear,
+			int dayOfMonth) {
+		// TODO Auto-generated method stub
+		Calendar c = Calendar.getInstance();
+		c.set(year, monthOfYear, dayOfMonth);
+		SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd, yyyy");
+		formattedDate = sdf.format(c.getTime());
+		cd.setDate(formattedDate);
+	}
+	
+	public void showDatePickerDialog () {
+		DatePickerDialog dp = new DatePickerDialog(getActivity(), this, 2013, Calendar.APRIL, 17);
+	}
+	
+	
+	public void onAttach (Activity a) {
+		cd = (ChangeText)a;
+	}
+}

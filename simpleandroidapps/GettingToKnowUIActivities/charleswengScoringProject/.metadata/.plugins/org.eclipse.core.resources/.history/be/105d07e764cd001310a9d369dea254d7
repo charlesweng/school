@@ -1,0 +1,35 @@
+package com.example.charleswengscoring;
+
+import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.support.v4.app.Fragment;
+import android.widget.DatePicker;
+
+interface dateChanged
+{
+	public void setDate(String data);
+}
+
+public class DateFragment extends DatePickerDialog implements DatePickerDialog.OnDateSetListener, DialogInterface.OnClickListener {
+
+	public DateFragment(Context context, int theme, OnDateSetListener callBack,
+			int year, int monthOfYear, int dayOfMonth) {
+		super(context, theme, callBack, year, monthOfYear, dayOfMonth);
+		super.setButton(BUTTON_POSITIVE, "Done", this);
+		// TODO Auto-generated constructor stub
+	}
+	public void changeData(String data)
+	{
+		
+	}
+	@Override
+	public void onDateSet(DatePicker view, int year, int monthOfYear,
+			int dayOfMonth) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+
+}

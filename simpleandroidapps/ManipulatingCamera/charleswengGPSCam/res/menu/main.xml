@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.ucsb.cs.cs185.charlesweng.charleswengGPSCam.MainActivity" >
+
+	<item
+        android:id="@+id/action_take_photo"
+        android:orderInCategory="100"
+        android:title="@string/action_take_photo"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="never"/>
+
+</menu>

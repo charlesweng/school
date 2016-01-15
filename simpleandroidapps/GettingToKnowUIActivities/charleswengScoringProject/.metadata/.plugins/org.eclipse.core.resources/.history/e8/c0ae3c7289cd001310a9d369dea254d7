@@ -1,0 +1,39 @@
+package com.example.charleswengscoring;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class TeamDialog extends Fragment{
+	
+	EditText editTeam1, editTeam2, editScore1, editScore2;
+	Button doneButton;
+	@Override
+	public void onCreate(Bundle  savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		editTeam1 = (EditText)getActivity().findViewById(R.id.editTeam1);
+		editTeam2 = (EditText)getActivity().findViewById(R.id.editTeam2);
+		editScore1 = (EditText)getActivity().findViewById(R.id.editScore1);
+		editScore2 = (EditText)getActivity().findViewById(R.id.editScore2);
+		doneButton = (Button)getActivity().findViewById(R.id.doneButton);
+	}
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		return inflater.inflate(R.layout.fragment_teamdialog, container, false);
+	}
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+	}
+	
+	public void editTexts(View v)
+	{
+		
+	}
+	
+}

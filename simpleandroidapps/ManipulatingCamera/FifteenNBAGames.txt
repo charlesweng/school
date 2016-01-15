@@ -1,0 +1,15 @@
+Dec 29, 2012 	Brooklyn Nets 		103, 	Cleveland Cavaliers 	100 
+Mar 21, 2013 	Denver Nuggets 		101, 	Philadelphia 76ers 	100 
+Nov 9, 2012 	Milwaukee Bucks 	101, 	Washington Wizards 	91  
+Jan 11, 2013 	New Orleans Pelicans 	104, 	Minnesota Timberwolves 	92  
+Apr 3, 2013 	Brooklyn Nets 		113, 	Cleveland Cavaliers 	95  
+Dec 21, 2012 	Memphis Grizzlies 	92, 	Dallas Mavericks 	82  
+Apr 3, 2013 	Minnesota Timberwolves 	107, 	Milwaukee Bucks 	98  
+Jan 7, 2013 	Boston Celtics 		102, 	New York Knicks 	96  
+Dec 7, 2012 	Sacramento Kings 	91, 	Orlando Magic 		82  
+Dec 18, 2012 	Miami Heat 		103, 	Minnesota Timberwolves 	92  
+Nov 19, 2012 	Atlanta Hawks 		81, 	Orlando Magic 		72  
+Mar 20, 2013 	Los Angeles Clippers 	101, 	Philadelphia 76ers 	72  
+Feb 23, 2013 	Cleveland Cavaliers 	118, 	Orlando Magic 		94  
+Dec 25, 2012 	Los Angeles Clippers 	112, 	Denver Nuggets 		100 
+Mar 27, 2013 	Philadelphia 76ers 	100, 	Milwaukee Bucks 	92  

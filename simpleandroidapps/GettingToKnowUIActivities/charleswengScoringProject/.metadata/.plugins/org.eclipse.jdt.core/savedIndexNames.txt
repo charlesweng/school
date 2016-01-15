@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/Users/charlesweng/Documents/Classes/Spring 2014/cs185/hw/charleswengScoringProject/.metadata/.plugins/org.eclipse.jdt.core
+1270315800.index
+2139572361.index
+584094035.index

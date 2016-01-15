@@ -1,0 +1,32 @@
+package com.example.charleswengscoring;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+public class TeamFragment extends Fragment{
+	
+	TextView team1text, team2text, score1text, score2text;
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		return inflater.inflate(R.layout.fragment_team, container, false);
+	}
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		team1text = (TextView) getActivity().findViewById(R.id.team1text);
+		team2text = (TextView) getActivity().findViewById(R.id.team2text);
+		score1text = (TextView) getActivity().findViewById(R.id.score1text);
+		score2text = (TextView) getActivity().findViewById(R.id.score2text);
+	}
+	public void changeTexts(String team1, String score1, String team2, String score2)
+	{
+		team1text.setText(team1);
+		score1text.setText(score1);
+		team2text.setText(team2);
+		score2text.setText(score2);
+	}
+}
