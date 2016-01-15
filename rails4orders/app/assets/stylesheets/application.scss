@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* THIS THING MAKES MY ANIMATION DO WEIRD THINGS - ANNOYING
+body {
+  padding-top: 40px
+}
+BUT I NEED THIS!!! FOR MY TOP BAR NOT TO COVER THINGS*/
+
+.navbar-default {
+  background-color: #9bec96;
+  border-color: #52bb5a;
+}
+.navbar-default .navbar-brand {
+  color: #035209;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #035209;
+}
+.navbar-default .navbar-text {
+  color: #035209;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #035209;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #035209;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #9bec96;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #035209;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #035209;
+  background-color: #52bb5a;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #9bec96;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #035209;
+  background-color: #52bb5a;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #035209;
+  background-color: #52bb5a;
+}
+.navbar-default .navbar-toggle {
+  border-color: #52bb5a;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #52bb5a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #035209;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #035209;
+}
+.navbar-default .navbar-link {
+  color: #035209;
+}
+.navbar-default .navbar-link:hover {
+  color: #035209;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #035209;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #035209;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #035209;
+    background-color: #52bb5a;
+  }
+}
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background-image: image-url('Firefox_wallpaper.png');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background-image: image-url('androideatsapple.png');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background-image: image-url('nodepi.jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
