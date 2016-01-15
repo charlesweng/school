@@ -2,11 +2,11 @@
 
 school projects and tutorials
 
-[a relative link](hospital)
+[hospital](hospital)
 
-an application representing a storage system for hospital information ~ Admin, Patient, and Doctor roles
+a java swing application representing a storage system for hospital information ~ Admin, Patient, and Doctor roles
 
-[a relative link](fileshare)
+[fileshare](fileshare)
 
 an android app that allows you to organize, send, and receive files
 
