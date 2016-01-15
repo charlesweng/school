@@ -6,4 +6,7 @@ school projects and tutorials
 
 [fileshare](fileshare) - an android app that allows you to organize, send, and receive files
 
+[micropost](micropost) - outdated rails tutorial made by Michael Hartl
+
+[puzzleme](puzzleme) - java swing game, dennis's idea for a projects course
 
